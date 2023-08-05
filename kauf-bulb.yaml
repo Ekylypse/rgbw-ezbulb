@@ -57,12 +57,12 @@ esp8266:
 
 # https://esphome.io/components/external_components.html
 external_components:
-  #- source:
-   #   type: git
+  - source:
+      type: git
    #   url: https://github.com/KaufHA/common
-      #url: https://github.com/Ekylypse/common-iot
+      url: https://github.com/Ekylypse/common-iot
    #   ref: v2023.07.18
-   # refresh: always
+    refresh: always
   - source:
       type: git
       url: https://github.com/Ekylypse/rgbw-ezbulb
@@ -470,12 +470,12 @@ script:
             - light.turn_on:
                 id: ez_light
                 brightness: 50%
-                red:   100%
-                green: 100%
-                blue:    0%
+                red:   50%
+                green: 0%
+                blue:    50%
                 transition_length: 1s
-            - delay: 2s
-            - light.turn_off: ez_light
+            #- delay: 2s
+            #- light.turn_off: ez_light
 
       # wait 10 seconds
       - delay: 10s
