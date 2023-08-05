@@ -57,12 +57,12 @@ esp8266:
 
 # https://esphome.io/components/external_components.html
 external_components:
-  - source:
-      type: git
-      url: https://github.com/KaufHA/common
+  #- source:
+   #   type: git
+   #   url: https://github.com/KaufHA/common
       #url: https://github.com/Ekylypse/common-iot
-      ref: v2023.07.18
-    refresh: always
+   #   ref: v2023.07.18
+   # refresh: always
   - source:
       type: git
       url: https://github.com/Ekylypse/rgbw-ezbulb
