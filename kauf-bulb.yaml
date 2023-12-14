@@ -181,7 +181,7 @@ output:
 light:
 
   # Additive RGB light for Warm White
-  - platform: ez_rgbww
+  - platform: kauf_rgbww
     id: warm_rgb
     entity_category: config
     default_transition_length: 0ms
@@ -195,7 +195,7 @@ light:
     restore_mode: RESTORE_DEFAULT_OFF
 
 # Additive RGB light for Cold White
-  - platform: ez_rgbww
+  - platform: kauf_rgbww
     id: cold_rgb
     entity_category: config
     default_transition_length: 0ms
@@ -209,7 +209,7 @@ light:
     restore_mode: RESTORE_DEFAULT_OFF
 
   # Main RGBWW light
-  - platform: ez_rgbww
+  - platform: kauf_rgbww
     id: ez_light
     default_transition_length: 250ms
     name: $friendly_name
